@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define MAX 5
+void main()
+{
+    int a[MAX] = {4,6,7,9};
+    int size = 4;
+    int i = 0;
+    int value = 1;
+    printf("Printing array before insertion -\n");
+    for(i=0;i<size;i++){
+        printf("array [%d] = %d \n", i , a[i]);
+    }
+    a[0] = value;
+    size++;
+    printf("Printing the array after insertion -\n");
+    for(i=0;i<size;i++){
+        printf("array[%d] = %d\n" , i, a[i]);
+    }
+}
+    
