@@ -1,0 +1,33 @@
+#include<stdio.h>
+#define MAX 50
+int main()
+{
+    int a[MAX];
+    int size,i,arrIndex,revIndex;
+    int temp;
+
+    printf("Enter the size of the array:");
+    scanf("%d",&size);
+    printf("Enter elements in the array:");
+    for(i=0;i<size;i++){
+    scanf("%d",&a[i]);
+    }
+    revIndex = 0;
+    arrIndex = size - 1;
+    while(revIndex < arrIndex)
+    {
+        temp = a[revIndex];
+        a[revIndex]=a[arrIndex];
+        a[arrIndex]=temp;
+        revIndex++;
+        arrIndex--;
+    }
+    printf("\nArray in reverse order:");
+    for(i=0;i<size;i++);
+    {
+        printf("%d\t",a[i]);
+    }
+    return 0;
+}
+
+    
