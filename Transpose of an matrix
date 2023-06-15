@@ -1,0 +1,44 @@
+#include<stdio.h>
+#define max_rows 3
+#define max_col 3
+int main()
+{
+    int A[max_rows][max_col];
+    int B[max_col][max_rows];
+    int row,col;
+    printf("Enter elements in matrix of size %dx%d:\n",max_rows,max_col);
+    for(row=0;row<max_rows;row++)
+    {
+        for(col=0;col<max_col;col++)
+        {
+            scanf("%d",&A[row][col]);
+        }
+    }
+    for(row=0;row<max_rows;row++)
+    {
+        for(col=0;col<max_col;col++)
+        {
+            B[col][row] = A[row][col];
+        }
+    }
+    printf("\nOriginal matrix:\n");
+    for(row=0;row<max_rows;row++)
+    {
+        for(col=0;col<max_col;col++)
+        {
+            printf("%d",A[row][col]);
+        }
+        printf("\n");
+    }
+    printf("Trnaspose of matrix A:\n");
+    for(row=0;row<max_rows;row++)
+    {
+        for(col=0;col<max_col;col++)
+        {
+            printf("%d",B[row][col]);
+        }
+        printf("\n");
+    }
+        return 0;
+}
+
