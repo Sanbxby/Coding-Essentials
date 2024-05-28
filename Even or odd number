@@ -1,0 +1,8 @@
+def evenodd(n):
+    if n%2==0:
+        print("Even")
+    else:
+        print("odd")
+
+y=int(input())
+evenodd(y)
