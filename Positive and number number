@@ -1,0 +1,8 @@
+def posneg(n):
+    if n>=0:
+        print("Positive number")
+    else:
+        print("Negative number")
+
+y=int(input())
+posneg(y)
