@@ -1,0 +1,9 @@
+def reverse(n):
+    m=0
+    while n>0:
+        m=m+(n%10)
+        n=n//10
+    return m
+    
+y=int(input())
+print(reverse(y))
