@@ -1,0 +1,18 @@
+def armstrong(n):
+    m=len(str(n))
+    y=0
+    h=n
+    while n>0:
+        y=y+(n%10)**m
+        n=n//10
+    if h == y:
+        return (True)
+    else:
+        return (False)
+       
+        
+low,high=map(int, input().split())
+for i in range(low,high+1):
+    if armstrong(i):
+        print(i)
+        
