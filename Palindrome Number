@@ -1,0 +1,14 @@
+def ispalin(n):
+    m=0
+    k=n
+    while n>0:
+        m=m*10+(n%10)
+        n=n//10
+    print (m)
+    if m==k:
+        return True
+    return False
+    
+    
+y=int(input())
+print (ispalin(y))
