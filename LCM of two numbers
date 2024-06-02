@@ -1,0 +1,9 @@
+def HCF(a,b):
+    return b==0 and a or HCF(b,a%b)
+    
+num1=int(input())
+num2=int(input())
+hcf= HCF(num1,num2)
+
+lcm= (num1*num2)//hcf
+print("the lcm is:",lcm)
